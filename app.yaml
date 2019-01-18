@@ -1,0 +1,11 @@
+entrypoint: bundle exec rackup --port $PORT
+env: flex
+runtime: ruby
+
+env_variables:
+  SECRET_KEY_BASE: 0570fa11e0d4cdc5971a8a32d569a7c00b1587eb2a7c53b97acc79bc7e90bdf98c5435c0a5ef776a688321114b0b3dee849ff916e42cf608e76f5348bff6a679
+
+beta_settings:
+  cloud_sql_instances: "sms-pictures:us-central1:sms-pictures-db"
+  username: "root"
+  password: "root"
